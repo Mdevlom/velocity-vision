@@ -35,7 +35,9 @@ const Navigation = ({user}: Props) => {
           <Link href={'/sign-in'} className="bg-primary text-whitep-2 px-4 rounded md hover: bg-primary/80">
            Se connecter
           </Link>
+          <UserButton />
           <ModeToggle />
+          
         </aside>
     </div>
   )
