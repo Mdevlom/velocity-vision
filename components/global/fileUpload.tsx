@@ -17,7 +17,7 @@ const FileUpload = ({ apiEndpoint, onChange, value }: Props) => {
     return (
       <div className="flex flex-col justify-center items-center">
         {type !== "pdf" ? (
-          <div className="relative w-16 h-16 ">
+          <div className="relative w-14 h-14 ">
             <Image
               src={value}
               alt="image telecharger"
