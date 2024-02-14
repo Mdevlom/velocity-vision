@@ -23,6 +23,7 @@ const Agency = async ({
   //       return redirect(
   //         `/agency/${agencyId}/billing?plan=${searchParams.plan}`
   //       );
+    
   //     }
   //     if (searchParams.state) {
   //       const statePath = searchParams.state.split("__")[0];
@@ -37,6 +38,7 @@ const Agency = async ({
   //   }
   // }
   // const authUser = await currentUser()
+
 
   return (
     <div className="flex justify-center items-center mt-4">

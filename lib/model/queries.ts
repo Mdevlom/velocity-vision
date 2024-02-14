@@ -26,7 +26,9 @@ import { revalidatePath } from 'next/cache'
 export const getAuthUserDetails = async () => {
   const user = await currentUser()
   if (!user) {
-    return null
+    return {
+      id: null
+    }
   }
 
   const userData = await db.user.findUnique({

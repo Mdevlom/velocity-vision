@@ -1,7 +1,7 @@
-
+import { withUt } from 'uploadthing/tw'
 import colors from 'tailwindcss/colors'
 
-module.exports = ({
+module.exports = withUt({
   darkMode: ['class'],
   content: [
     './pages/**/*.{ts,tsx}',
@@ -188,20 +188,3 @@ module.exports = ({
   ],
   plugins: [require('tailwindcss-animate')],
 })
-
-function withUt(arg0: {
-  darkMode: string[]; content: string[]; theme: {
-    container: { center: boolean; padding: string; screens: { '2xl': string } }; extend: {
-      colors: {
-        tremor: { brand: { faint: "#eff6ff"; muted: "#bfdbfe"; subtle: "#60a5fa"; DEFAULT: "#3b82f6"; emphasis: "#1d4ed8"; inverted: "#fff" }; background: { muted: "#f9fafb"; subtle: "#f3f4f6"; DEFAULT: "#fff"; emphasis: "#374151" }; border: { DEFAULT: "#e5e7eb" }; ring: { DEFAULT: "#e5e7eb" }; content: { subtle: "#9ca3af"; DEFAULT: "#6b7280"; emphasis: "#374151"; strong: "#111827"; inverted: "#fff" } }; 'dark-tremor': { brand: { faint: string; muted: "#172554"; subtle: "#1e40af"; DEFAULT: "#3b82f6"; emphasis: "#60a5fa"; inverted: "#172554" }; background: { muted: string; subtle: "#1f2937"; DEFAULT: "#111827"; emphasis: "#d1d5db" }; border: { DEFAULT: "#374151" }; ring: { DEFAULT: "#1f2937" }; content: { subtle: "#4b5563"; DEFAULT: "#6b7280"; emphasis: "#e5e7eb"; strong: "#f9fafb"; inverted: "#030712" } }; boxShadow: {
-          // light
-          'tremor-input': string; 'tremor-card': string; 'tremor-dropdown': string
-          // dark
-          'dark-tremor-input': string; 'dark-tremor-card': string; 'dark-tremor-dropdown': string
-        }; borderRadius: { 'tremor-small': string; 'tremor-default': string; 'tremor-full': string }; border: string; input: string; ring: string; background: string; foreground: string; primary: { DEFAULT: string; foreground: string }; secondary: { DEFAULT: string; foreground: string }; destructive: { DEFAULT: string; foreground: string }; muted: { DEFAULT: string; foreground: string }; accent: { DEFAULT: string; foreground: string }; popover: { DEFAULT: string; foreground: string }; card: { DEFAULT: string; foreground: string }
-      }; borderRadius: { lg: string; md: string; sm: string }; keyframes: { 'accordion-down': { from: { height: string }; to: { height: string } }; 'accordion-up': { from: { height: string }; to: { height: string } }; 'automation-zoom-in': { '0%': { transform: string }; '100%': { transform: string } } }; animation: { 'accordion-down': string; 'accordion-up': string; 'automation-zoom-in': string }
-    }
-  }; safelist: ({ pattern: RegExp; variants: string[] } | { pattern: RegExp })[]; plugins: any[]
-}): any {
-  throw new Error('Function not implemented.')
-}

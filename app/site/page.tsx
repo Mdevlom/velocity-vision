@@ -1,7 +1,7 @@
 
 import Navigation from "@/components/navigation";
 import Image from "next/image";
-import { pricingCards } from "./constants";
+import { pricingCards } from "../constants";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import clsx from "clsx";
 import { Check } from "lucide-react";
